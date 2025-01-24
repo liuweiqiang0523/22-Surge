@@ -1,0 +1,93 @@
+# NAME: Emby
+# AUTHOR: 22
+# UPDATED: 2025-01-25 01:16:40
+# DOMAIN: 43
+# DOMAIN-KEYWORD: 4
+# DOMAIN-SUFFIX: 45
+# PROCESS-NAME: 1
+# TOTAL: 93
+DOMAIN-SUFFIX,pub1.emby.wtf
+DOMAIN-SUFFIX,pub2.emby.wtf
+DOMAIN-SUFFIX,pub3.emby.wtf
+DOMAIN,cdn.lyrebirdemby.com
+DOMAIN,emby3.mcjoker.xyz
+DOMAIN,emby.sexemby.com
+DOMAIN,dbcdn.sexemby.com
+DOMAIN,hkvol.sexemby.com
+DOMAIN,fast.vfing.de
+DOMAIN,nl.sexemby.com
+DOMAIN,jpvol2.sexemby.com
+DOMAIN,jpvol.sexemby.com
+DOMAIN,emby-db-jp.vfing.de
+DOMAIN,us3.sexemby.com
+DOMAIN,us1.sexemby.com
+DOMAIN,emby-mica-us-v1.mius.uk
+DOMAIN,emby-micax-ca-v2.mius.uk
+DOMAIN,emby-mica-hk-v4.mius.uk
+DOMAIN,emby-mica-yxvm-hk-v4.mius.uk
+DOMAIN,emby-mica-hk3-v4.mius.uk
+DOMAIN,lite.saturday.video
+DOMAIN,us.nanflix.net
+DOMAIN,play.charontv.com
+DOMAIN,su.viclub.top
+DOMAIN,sj.viclub.top
+DOMAIN,cf.306699.xyz
+DOMAIN,vi-jp.pppp.us.kg
+DOMAIN,vi-hk.pppp.us.kg
+DOMAIN,vi-sg.pppp.us.kg
+DOMAIN,pilipili.club
+DOMAIN,css.pilipili.club
+DOMAIN,pilipili.hitagi.me
+DOMAIN,emby.enjoyit.eu.org
+DOMAIN,emby.lcloud.wiki
+DOMAIN,notnetflix.cos.cat
+DOMAIN-SUFFIX,123456.al
+DOMAIN-SUFFIX,285286.xyz
+DOMAIN-SUFFIX,agahk1.jmsooo.com
+DOMAIN-SUFFIX,agajp1.jmsooo.com
+DOMAIN-SUFFIX,agasg1.jmsooo.com
+DOMAIN-SUFFIX,aws.jmsooo.com
+DOMAIN-SUFFIX,cf1.jmsooo.com
+DOMAIN-SUFFIX,cristiamo.xyz
+DOMAIN-SUFFIX,emby.cjpc.cc
+DOMAIN-SUFFIX,emby.cjpc.tv
+DOMAIN-SUFFIX,emby.cjpc.xyz
+DOMAIN-SUFFIX,emby.cristiamo.top
+DOMAIN-SUFFIX,emby.flowercloud.yt
+DOMAIN-SUFFIX,emby.immtel.com
+DOMAIN-SUFFIX,emby.maying.club
+DOMAIN-SUFFIX,emby.mcwy.me
+DOMAIN-SUFFIX,emby.mdss.cloud
+DOMAIN-SUFFIX,emby.neko.edu.rs
+DOMAIN-SUFFIX,emby.nexitally.com
+DOMAIN-SUFFIX,emby.nyancat.net
+DOMAIN-SUFFIX,emby.ok.edu.hk
+DOMAIN-SUFFIX,emby.paoche.ooo
+DOMAIN-SUFFIX,emby.prprcloud.com
+DOMAIN-SUFFIX,emby.wtf
+DOMAIN-SUFFIX,emby.xeton.dev
+DOMAIN-SUFFIX,emby.ytoo.li
+DOMAIN-SUFFIX,embymv.tk
+DOMAIN-SUFFIX,embyplus.org
+DOMAIN-SUFFIX,embyserver.ga
+DOMAIN-SUFFIX,hinet.jmsooo.com
+DOMAIN-SUFFIX,imetyou.top
+DOMAIN-SUFFIX,jellyfin.asia
+DOMAIN-SUFFIX,jellyfin.xeton.dev
+DOMAIN-SUFFIX,line.emby.men
+DOMAIN-SUFFIX,mickeycloud.com
+DOMAIN-SUFFIX,movie.xeton.dev
+DOMAIN-SUFFIX,ntt1.jmsooo.com
+DOMAIN-SUFFIX,ohhhh.org
+DOMAIN-SUFFIX,peachmv.me
+DOMAIN-SUFFIX,pilipiliultra.com
+DOMAIN-SUFFIX,plusmedia.site
+DOMAIN-SUFFIX,poloemby.xyz
+DOMAIN-SUFFIX,pornemby.club
+DOMAIN-SUFFIX,servers.xeton.dev
+DOMAIN-SUFFIX,xmsl.org
+DOMAIN-KEYWORD,emby.wtf
+DOMAIN-KEYWORD,jmsooo
+DOMAIN-KEYWORD,emby
+DOMAIN-KEYWORD,odysseyplus
+PROCESS-NAME,com.mb.android
