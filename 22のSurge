@@ -3,7 +3,7 @@
 # 帮助中心 - https://nssurge.zendesk.com/
 # 技术社区 - https://community.nssurge.com
 
-# > 借用深巷有喵的「Surge」配置
+# > 参考深巷有喵的「Surge」配置
 # > 日期：2025-07-29
 # > 版本：3.7.6
 # > 配置作者：https://github.com/Rabbit-Spec/Surge
@@ -16,9 +16,9 @@ show-error-page-for-reject = true
 # > 允许Wi-Fi访问
 allow-wifi-access = false
 # > All Hybrid 网络并发
-all-hybrid = false
+all-hybrid = true
 # > IPv6 支持（默认关闭）
-ipv6 = false
+ipv6 = true
 # > IPv6 VIF（默认禁用）
 ipv6-vif = disabled
 # > 测试超时（秒）
@@ -61,7 +61,6 @@ udp-policy-not-supported-behaviour = REJECT
 📹 油管视频 = select, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点
 📽 哔哩哔哩 = select, 🌐 全球直连, 🇭🇰 香港节点, 🇨🇳 台湾节点
 📟 智能助理 = select, ✈️ 节点选择, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点
-Ⓜ️ 微软服务 = select, 🌐 全球直连, ✈️ 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点
 🍎 苹果服务 = select, 🌐 全球直连, ✈️ 节点选择, 🇭🇰 香港节点, 🇺🇲 美国节点, 🇯🇵 日本节点, 🇰🇷 韩国节点, 🇸🇬 新加坡节点
 # > 外部节点
 🇭🇰 香港节点 = smart, include-other-group=🚀 22の节点, update-interval=0, no-alert=0, hidden=1, include-all-proxies=0, policy-regex-filter=(🇭🇰)|(香港)|(Hong)|(HK)
@@ -81,8 +80,6 @@ RULE-SET,https://raw.githubusercontent.com/EAlyce/conf/refs/heads/main/Rule/Open
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple_All_No_Resolve.list,🍎 苹果服务
 # > GitHub
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GitHub/GitHub.list,✈️ 节点选择,no-resolve
-# > 微软服务
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list,Ⓜ️ 微软服务
 # > 社交平台
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list,📲 电报信息
 # > 流媒体
