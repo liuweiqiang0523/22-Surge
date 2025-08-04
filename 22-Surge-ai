@@ -1,0 +1,85 @@
+# Surge 配置文件
+# 创建日期：2025-08-05
+# 创建作者：__22号仔Stringer
+# 支持系统：iOS & macOS
+# 功能包含：IPv6、分地区策略组、AI 分流、Telegram 分流、TikTok 分流、广告增强、回家策略等
+
+[General]
+loglevel = notify
+bypass-system = true
+ipv6 = true
+dns-server = system, 8.8.8.8, 1.1.1.1
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
+always-real-ip = custom
+
+[Proxy]
+# 节点通过订阅链接导入，无需手动填写
+
+[Proxy Group]
+🇭🇰HK = url-test, include-all-proxies, filter-name=🇭🇰, interval=300
+🇹🇼TW = url-test, include-all-proxies, filter-name=🇹🇼, interval=300
+🇯🇵JP = url-test, include-all-proxies, filter-name=🇯🇵, interval=300
+🇸🇬SG = url-test, include-all-proxies, filter-name=🇸🇬, interval=300
+🇺🇸US = url-test, include-all-proxies, filter-name=🇺🇸, interval=300
+🇩🇪DE = url-test, include-all-proxies, filter-name=🇩🇪, interval=300
+🌍Others = url-test, include-all-proxies, exclude-filter-name=🇭🇰|🇹🇼|🇯🇵|🇸🇬|🇺🇸|🇩🇪, interval=300
+
+🏠 回家 = select, 🇭🇰HK, 🇹🇼TW, 🇸🇬SG, 🇯🇵JP, 🇺🇸US, 🇩🇪DE, 🌍Others, DIRECT
+🤖 AI服务 = select, 🇺🇸US, 🇭🇰HK, 🇯🇵JP, 🇸🇬SG, 🇹🇼TW, 🇩🇪DE, 🌍Others
+✈️ Telegram = select, 🇭🇰HK, 🇸🇬SG, 🇯🇵JP, 🇺🇸US, DIRECT
+📱 TikTok = select, 🇯🇵JP, 🇺🇸US, 🇸🇬SG, 🇭🇰HK, DIRECT
+🔰 节点选择 = select, 🇭🇰HK, 🇹🇼TW, 🇸🇬SG, 🇯🇵JP, 🇺🇸US, 🇩🇪DE, 🌍Others, DIRECT
+
+[Rule]
+# AI 分流
+DOMAIN-SUFFIX,openai.com,🤖 AI服务
+DOMAIN-SUFFIX,chat.openai.com,🤖 AI服务
+DOMAIN-SUFFIX,api.openai.com,🤖 AI服务
+DOMAIN-SUFFIX,anthropic.com,🤖 AI服务
+DOMAIN-SUFFIX,claude.ai,🤖 AI服务
+DOMAIN-SUFFIX,gemini.google.com,🤖 AI服务
+
+# Telegram 分流（优先香港）
+DOMAIN-KEYWORD,t.me,✈️ Telegram
+DOMAIN-KEYWORD,telegram,✈️ Telegram
+
+# TikTok 分流（优先日本）
+DOMAIN-KEYWORD,tiktok,📱 TikTok
+DOMAIN-SUFFIX,byteoversea.com,📱 TikTok
+DOMAIN-SUFFIX,tiktokv.com,📱 TikTok
+
+# 回家服务
+DOMAIN-SUFFIX,myhomenas.example.com,🏠 回家
+DOMAIN-SUFFIX,homeassistant.local,🏠 回家
+
+# 国际常用服务默认代理
+DOMAIN-SUFFIX,youtube.com,🔰 节点选择
+DOMAIN-SUFFIX,twitter.com,🔰 节点选择
+DOMAIN-SUFFIX,netflix.com,🔰 节点选择
+DOMAIN-KEYWORD,facebook,🔰 节点选择
+DOMAIN-SUFFIX,google.com,🔰 节点选择
+
+# 广告规则（基础）
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+DOMAIN-SUFFIX,googlesyndication.com,REJECT
+DOMAIN-SUFFIX,adnxs.com,REJECT
+DOMAIN-SUFFIX,adsafeprotected.com,REJECT
+
+# 广告增强
+RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Reject/Advertising.list,REJECT
+RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Reject/AdvertisingPlus.list,REJECT
+
+# Apple 服务直连
+RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Apple/Apple.list,DIRECT
+
+# 中国服务直连
+RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list,DIRECT
+
+# 最终兜底规则
+FINAL,DIRECT
+
+[Rule Set]
+Advertising = https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Reject/Advertising.list
+AdvertisingPlus = https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Reject/AdvertisingPlus.list
+Apple = https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Apple/Apple.list
+China = https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list
